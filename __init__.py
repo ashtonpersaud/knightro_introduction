@@ -29,8 +29,12 @@ class introSkill(MycroftSkill):
         serD.flush()
         serD.write(b"intro")
         time.sleep(1.5)
-        self.speak_dialog("hello kurt, these are the people who made me. We have billy who oversaw project management budgeting and CAD, lindsay who also worked on CAD as well as my electrical system, tyler and riley who designed several of my armor pieces. Sintia helped create the voice assistant, Brandon wrote the code that allowed me to move, and ashton helped connect the voice assistant and motors together.  ")
-
+        self.speak_dialog("hello kurt, these are the people who made me.  ")
+        self.speak_dialog("We have billy who oversaw project management budgeting and CAD")
+        self.speak_dialog("Lindsay who also worked on CAD as well as my electrical system")
+        self.speak_dialog("Tyler and riley who designed several of my armor pieces.")
+        self.speak_dialog("Sintia helped create the voice assistant")
+        self.speak_dialog(" Brandon wrote the code that allowed me to move, and ashton helped connect the voice assistant and motors together")
       
 
     def stop(self):
